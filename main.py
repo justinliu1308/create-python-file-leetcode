@@ -90,3 +90,16 @@ def main(link):
 if __name__ == "__main__":
     main(link)
 
+    # Testing - will generate 10 different files. Need to visually verify.
+
+    # main('https://leetcode.com/problems/same-tree/')
+    # main('https://leetcode.com/problems/minimum-falling-path-sum/')
+    # main('https://leetcode.com/problems/minimum-path-sum/')
+    # main('https://leetcode.com/problems/product-of-the-last-k-numbers/description/')
+    # main('https://leetcode.com/problems/number-of-arithmetic-triplets/')
+    # main('https://leetcode.com/problems/fair-candy-swap/')
+    # main('https://leetcode.com/problems/design-hashmap/')
+    # main('https://leetcode.com/problems/can-i-win/')
+    # main('https://leetcode.com/problems/satisfiability-of-equality-equations/')
+    # main('https://leetcode.com/problems/word-search/')
+    
