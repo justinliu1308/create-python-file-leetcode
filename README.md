@@ -1,6 +1,6 @@
 # Generate Local Python File for LeetCode Problems
 
-For online LeetCode users who wish to work on and store code offline, this reads a problem-specific URL and:
+For online LeetCode users who wish to work on and store code offline, this script reads a problem-specific URL and:
 - Queries problem information from LeetCode
 - Creates a local Python file with the appropriate file name
 - Formats and adds the problem information
