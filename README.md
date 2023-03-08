@@ -10,5 +10,8 @@ Usage:
 2. In the terminal, navigate to the directory where you intend to generate the new Python file
 3. Run main.py
 
-Sample output file:
+Sample LeetCode problem from website:
+![alt text](https://github.com/justinliu1308/create-python-file-leetcode/blob/main/sample-problem-screenshot.png)
+
+Sample output file created:
 ![alt text](https://github.com/justinliu1308/create-python-file-leetcode/blob/main/output-screenshot.png)
