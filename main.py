@@ -1,12 +1,8 @@
 import requests
 import os
+import sys
 import textwrap
 from bs4 import BeautifulSoup
-
-##################################################################################################
-# Paste the full link of each problem you wish to create a file for, with or with '/description/'
-link = 'https://leetcode.com/problems/same-tree/'
-##################################################################################################
 
 def main(link):
     def api_query(link):
@@ -88,7 +84,13 @@ def main(link):
     os.startfile(filename)
 
 if __name__ == "__main__":
-    main(link)
+    # https://leetcode.com/problems/same-tree/
+    if len(sys.argv) == 2:
+        link = sys.argv[1]
+        main(link)
+    else:
+        print("\nPlease provide one command line argument.\n")
+
 
     # Testing - will generate 10 different files. Need to visually verify.
 
