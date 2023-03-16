@@ -47,7 +47,7 @@ def main(link):
 
         # Extract problem title, level of difficulty, and question prompt from query
         number = r['data']['question']['questionFrontendId']
-        title = r['data']['question']['title'].title() + '.py'
+        title = r['data']['question']['title'] + '.py'
         filename = number + ' ' + title
         difficulty = r['data']['question']['difficulty']
         question =  soup.get_text().replace('\n',' ')
@@ -69,13 +69,13 @@ def main(link):
         new_file.write('# ' + link + '\n# ' + difficulty + '\n\n')
         for line in question_lines:
             new_file.write('# ' + line + '\n')
-        new_file.write('\n# Your code:\n\n')
+        new_file.write('\n# My code:\n\n')
         new_file.close()
 
     filename, difficulty, question_lines = api_query(link)
     exist = check_file_exists(filename)
     if exist == True:
-        print("File already exists. Nothing was done in order to prevent file overwrite.\nOpening existing file...")
+        print(f"{filename} already exists. Nothing was done in order to prevent file overwrite.\nPulling existing file...")
     else:
         create_local_file(filename, link, difficulty, question_lines)
         print("New file created:", filename, "\nOpening new file...")
@@ -99,8 +99,8 @@ if __name__ == "__main__":
     # main('https://leetcode.com/problems/minimum-path-sum/')
     # main('https://leetcode.com/problems/product-of-the-last-k-numbers/description/')
     # main('https://leetcode.com/problems/number-of-arithmetic-triplets/')
-    # main('https://leetcode.com/problems/fair-candy-swap/')
-    # main('https://leetcode.com/problems/design-hashmap/')
+    # main('https://leetcode.com/problems/stone-game-ii/')
+    # main('https://leetcode.com/problems/stone-game-ix/')
     # main('https://leetcode.com/problems/can-i-win/')
     # main('https://leetcode.com/problems/satisfiability-of-equality-equations/')
     # main('https://leetcode.com/problems/word-search/')
